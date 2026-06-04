@@ -31,21 +31,26 @@ font-size: 1.1rem;
 /* Navigation */
 
 nav {
-background-color: #f6f1df;
-padding: 14px 10px;
+background-color: #f3e6b3;
+padding: 16px 14px;
 text-align: center;
-border-bottom: 1px solid #e4d9b7;
+border-top: 3px solid #7ea4c7;
+border-bottom: 3px solid #7ea4c7;
+box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
 nav a {
 color: #5c2d2d;
 text-decoration: none;
-margin: 0 12px;
+margin: 0 10px;
+padding: 6px 10px;
 font-size: 0.95rem;
+border-radius: 4px;
+transition: background-color 0.2s ease;
 }
 
 nav a {
-text-decoration: underline;
+background-color: #dceaf5;
 }
 
 /* Main Content */
