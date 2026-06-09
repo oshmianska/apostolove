@@ -31,11 +31,11 @@ font-size: 1.1rem;
 /* Navigation */
 
 nav {
-background-color: #f3e6b3;
+background-color: #f0d36c;
 padding: 16px 14px;
 text-align: center;
-border-top: 3px solid #7ea4c7;
-border-bottom: 3px solid #7ea4c7;
+border-top: 3px solid #5f88b0;
+border-bottom: 3px solid #5f88b0;
 box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
