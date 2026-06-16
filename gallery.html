@@ -77,7 +77,60 @@
     </section>
 
 </main>
+<script>
 
+const images = [
+
+    "images/ukraine/Ukraine01.JPG",
+    "images/ukraine/Ukraine02.JPG",
+    "images/ukraine/Ukraine03.JPG",
+    "images/ukraine/Ukraine04.JPG",
+    "images/ukraine/Ukraine05.JPG",
+    "images/ukraine/Ukraine06.JPG",
+    "images/ukraine/Ukraine07.JPG",
+    "images/ukraine/Ukraine08.JPG",
+    "images/ukraine/Ukraine09.JPG",
+    "images/ukraine/Ukraine10.JPG",
+    "images/ukraine/Ukraine11.JPG",
+    "images/ukraine/Ukraine12.JPG",
+    "images/ukraine/Ukraine13.JPG",
+    "images/ukraine/Ukraine14.JPG",
+    "images/ukraine/Ukraine15.JPG",
+    "images/ukraine/Ukraine16.JPG"
+
+];
+
+let currentImage = 0;
+
+function showImage() {
+
+    document.getElementById("gallery-image").src =
+        images[currentImage];
+}
+
+function nextImage() {
+
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    showImage();
+}
+
+function previousImage() {
+
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    showImage();
+}
+
+</script>
 <footer>
 
     <p>
