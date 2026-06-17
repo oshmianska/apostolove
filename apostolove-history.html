@@ -80,8 +80,73 @@ The tale you have just read comes from Apostolove, a small town in southern Ukra
         </p>
 
     </section>
+   <section>
+
+<h2>Gallery</h2> 
+        <p> Illustrations, traditional motifs, and visual materials related to the fairytales and culture of the Apostolove region. </p> 
+        <div class="gallery-container"> 
+            <button class="gallery-button" onclick="previousImage()"> ❮ </button> 
+            <img id="gallery-image" src="ukraine/Ukraine03.JPG" alt="Gallery image"> 
+            <button class="gallery-button" onclick="nextImage()"> ❯ </button> </div> 
+        <p id="gallery-caption"> Illustration from the collection. </p>
+
+    </section>
 
 </main>
+<script>
+
+const images = [
+
+    "ukraine/Ukraine01.JPG",
+    "ukraine/Ukraine02.JPG",
+    "ukraine/Ukraine03.JPG",
+    "ukraine/Ukraine04.JPG",
+    "ukraine/Ukraine05.JPG",
+    "ukraine/Ukraine06.JPG",
+    "ukraine/Ukraine07.JPG",
+    "ukraine/Ukraine08.JPG",
+    "ukraine/Ukraine09.JPG",
+    "ukraine/Ukraine10.JPG",
+    "ukraine/Ukraine11.JPG",
+    "ukraine/Ukraine12.JPG",
+    "ukraine/Ukraine13.JPG",
+    "ukraine/Ukraine14.JPG",
+    "ukraine/Ukraine15.JPG",
+    "ukraine/Ukraine16.JPG"
+
+];
+
+let currentImage = 0;
+
+function showImage() {
+
+    document.getElementById("gallery-image").src =
+        images[currentImage];
+}
+
+function nextImage() {
+
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    showImage();
+}
+
+function previousImage() {
+
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    showImage();
+}
+
+</script>
 
 <footer>
 
