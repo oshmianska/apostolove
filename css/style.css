@@ -251,13 +251,6 @@ h2 {
 }
 
 
-a {
-    color:#245c8d;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-
 @media(max-width:700px){
 
     .artist-intro,
