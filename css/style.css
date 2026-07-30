@@ -198,3 +198,86 @@ color: #666;
 font-style: italic;
 
 }
+.artist-intro,
+.artist-row,
+.artbook {
+    width:85%;
+    max-width:1100px;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+
+img {
+    width:100%;
+    display:block;
+}
+
+
+h1 {
+    font-size:3rem;
+    color:#245c8d;
+}
+
+
+h2 {
+    color:#b08b3c;
+}
+
+
+.feature,
+.final-image {
+    width:70%;
+    max-width:900px;
+    margin:90px auto;
+}
+
+
+.reverse {
+    direction:rtl;
+}
+
+.reverse > * {
+    direction:ltr;
+}
+
+
+.artbook {
+    border-top:1px solid #ddd;
+    padding-top:70px;
+}
+
+
+a {
+    color:#245c8d;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+@media(max-width:700px){
+
+    .artist-intro,
+    .artist-row,
+    .artbook {
+        grid-template-columns:1fr;
+        width:90%;
+        margin:50px auto;
+    }
+
+    .reverse {
+        direction:ltr;
+    }
+
+    .feature,
+    .final-image {
+        width:90%;
+    }
+
+    h1 {
+        font-size:2.2rem;
+    }
+}
