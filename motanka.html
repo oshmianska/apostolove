@@ -88,9 +88,76 @@
         </p>
 
     </section>
+<section>
 
+<h2>Gallery</h2> 
+  
+        <div class="gallery-container"> 
+            <button class="gallery-button" onclick="previousImage()"> ❮ </button> 
+            <img id="gallery-image" src="ukraine/Ukraine03.JPG" alt="Gallery image"> 
+            <button class="gallery-button" onclick="nextImage()"> ❯ </button> </div> 
+        <p id="gallery-caption">Handmade motanka dolls, designed and made by my mother. </p>
+
+    </section>
 </main>
+<script>
 
+const images = [
+
+    "motanka/motanka01.jpg",
+    "motanka/motanka02.jpg",
+"motanka/motanka03.jpg",
+"motanka/motanka04.jpg",
+"motanka/motanka05.jpg",
+"motanka/motanka06.jpg",
+"motanka/motanka07.jpg",
+"motanka/motanka08.jpg",
+"motanka/motanka09.jpg",
+"motanka/motanka10.jpg",
+"motanka/motanka11.jpg",
+"motanka/motanka12.jpg",
+"motanka/motanka13.jpg",
+"motanka/motanka14.jpg",
+"motanka/motanka15.jpg",
+"motanka/motanka16.jpg",
+"motanka/motanka17.jpg",
+"motanka/motanka18.jpg",
+"motanka/motanka19.jpg",
+"motanka/motanka20.jpg",
+"motanka/motanka21.jpg"
+];
+
+let currentImage = 0;
+
+function showImage() {
+
+    document.getElementById("gallery-image").src =
+        images[currentImage];
+}
+
+function nextImage() {
+
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    showImage();
+}
+
+function previousImage() {
+
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    showImage();
+}
+
+</script>
 <footer>
 
     <p>
