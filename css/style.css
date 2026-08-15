@@ -257,7 +257,7 @@ h2 {
     .artist-row,
     .artbook {
         grid-template-columns:1fr;
-        width:90%;
+        width:80%;
         margin:50px auto;
     }
 
@@ -267,7 +267,7 @@ h2 {
 
     .feature,
     .final-image {
-        width:90%;
+        width:80%;
     }
 
     h1 {
